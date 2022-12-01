@@ -48,3 +48,7 @@ Route::get('/contact', function () { //Callback Function
 Route::get('/home1', 'App\Http\Controllers\DemoController@Home1');
 Route::get('/about1', 'App\Http\Controllers\DemoController@About1');
 Route::get('/contact1', 'App\Http\Controllers\DemoController@Contact1');
+
+
+// Creating Sixth Route in Laravel for Class-12
+Route::get('/Name/{namevalue}', 'App\Http\Controllers\DemoController2@MyName');
