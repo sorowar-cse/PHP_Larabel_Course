@@ -13,18 +13,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Creating First Route in Laravel
-Route::get('/about', function () { 
+Route::get('/sorowar', function () { 
     // return view('about');
-    return "About Page";
+    return "Yeahh, Sorowar is here";
 });
 
 // Creating Second Route in Laravel
 Route::get('/me', function () { //Callback Function
     // return view('contact');
     return "I'm Sorowar Mahabub";
+});
+
+
+Route::get('/', function () {
+        return view('Home');
+    });
+
+// Creating Third Route in Laravel
+Route::get('/about', function () { //Callback Function
+    return view('about');
+});
+
+// Creating Fourth Route in Laravel
+Route::get('/contact', function () { //Callback Function
+    return view('contact');
 });
