@@ -43,3 +43,8 @@ Route::get('/about', function () { //Callback Function
 Route::get('/contact', function () { //Callback Function
     return view('contact');
 });
+
+// Creating Fifth Route in Laravel
+Route::get('/home1', 'App\Http\Controllers\DemoController@Home1');
+Route::get('/about1', 'App\Http\Controllers\DemoController@About1');
+Route::get('/contact1', 'App\Http\Controllers\DemoController@Contact1');
